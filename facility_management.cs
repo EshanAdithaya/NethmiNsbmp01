@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class facility_management : Form
     {
-        public Form1()
+        public facility_management()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dashboard loginForm = new dashboard();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

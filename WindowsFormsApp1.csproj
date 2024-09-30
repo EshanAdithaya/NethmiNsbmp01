@@ -46,14 +46,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="academic_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="academic_management.Designer.cs">
+      <DependentUpon>academic_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facility_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facility_management.Designer.cs">
+      <DependentUpon>facility_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finance_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finance_management.Designer.cs">
+      <DependentUpon>finance_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="communication_and_collaberation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="communication_and_collaberation.Designer.cs">
+      <DependentUpon>communication_and_collaberation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_management_createStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_management_createStudent.Designer.cs">
+      <DependentUpon>student_management_createStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_management_assignCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_management_assignCourse.Designer.cs">
+      <DependentUpon>student_management_assignCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings_and_user_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_and_user_management.Designer.cs">
+      <DependentUpon>settings_and_user_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_management.Designer.cs">
+      <DependentUpon>student_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="academic_management.resx">
+      <DependentUpon>academic_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_management_assignCourse.resx">
+      <DependentUpon>student_management_assignCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_management_createStudent.resx">
+      <DependentUpon>student_management_createStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facility_management.resx">
+      <DependentUpon>facility_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finance_management.resx">
+      <DependentUpon>finance_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="communication_and_collaberation.resx">
+      <DependentUpon>communication_and_collaberation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_and_user_management.resx">
+      <DependentUpon>settings_and_user_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_management.resx">
+      <DependentUpon>student_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +155,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +169,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-sliders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
